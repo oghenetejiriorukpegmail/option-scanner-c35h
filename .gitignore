@@ -1,0 +1,54 @@
+# Dependency directories
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Environment variables
+.env
+*.env
+
+# Build output
+build/
+dist/
+out/
+
+# Logs
+logs
+*.log
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Database files
+*.sqlite
+*.db
+
+# Temporary files
+tmp/
+temp/
+
+# Compiled files
+*.compiled
+*.class
+
+# Dependency lock files
+package-lock.json
+yarn.lock
+
+# Testing
+coverage/
+.nyc_output/
+
+# Miscellaneous
+.cache/
+.next/
+.nuxt/
+.serverless/
