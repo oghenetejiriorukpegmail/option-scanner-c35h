@@ -2,35 +2,137 @@
 
 A streamlined, lightweight application for retail traders to identify and analyze trading opportunities in volatile stocks using options data and technical analysis.
 
-## Project Overview
+## Prerequisites
 
-This project is a simplified version of the comprehensive Options-Technical Hybrid Scanner, focusing on core functionality while reducing complexity for easier local installation and implementation.
+Before installation, ensure you have the following:
+- Node.js (v14 or later)
+- npm (v6 or later)
+- Git
 
-### Key Features
+## Installation Instructions
 
-- Market Analysis Module
-- Options Analysis Module
-- Trade Setup Module
+### Windows Installation
 
-### Technology Stack
+#### Method 1: Direct Installation
+1. Open Command Prompt or PowerShell
+2. Clone the repository:
+   ```powershell
+   git clone https://github.com/oghenetejiriorukpegmail/option-scanner-c35h.git
+   cd option-scanner-c35h
+   ```
+3. Install dependencies:
+   ```powershell
+   npm run install:all
+   ```
+4. Copy environment template:
+   ```powershell
+   copy .env.example .env
+   ```
+5. Start the application:
+   ```powershell
+   npm start
+   ```
 
-#### Frontend
-- React
-- React Context API
-- Material-UI
-- Recharts
+#### Method 2: Using Windows Subsystem for Linux (WSL)
+1. Enable WSL and install a Linux distribution
+2. Open WSL terminal
+3. Follow Linux installation instructions
 
-#### Backend
-- Node.js with Express
-- SQLite
+### macOS Installation
 
-## Getting Started
+1. Open Terminal
+2. Clone the repository:
+   ```bash
+   git clone https://github.com/oghenetejiriorukpegmail/option-scanner-c35h.git
+   cd option-scanner-c35h
+   ```
+3. Install dependencies:
+   ```bash
+   npm run install:all
+   ```
+4. Copy environment template:
+   ```bash
+   cp .env.example .env
+   ```
+5. Start the application:
+   ```bash
+   npm start
+   ```
 
-1. Clone the repository
-2. Install dependencies
-3. Set up environment variables
-4. Start the application
+### Linux Installation
+
+#### Ubuntu/Debian
+1. Open Terminal
+2. Install dependencies:
+   ```bash
+   sudo apt update
+   sudo apt install git nodejs npm
+   ```
+3. Clone the repository:
+   ```bash
+   git clone https://github.com/oghenetejiriorukpegmail/option-scanner-c35h.git
+   cd option-scanner-c35h
+   ```
+4. Install project dependencies:
+   ```bash
+   npm run install:all
+   ```
+5. Copy environment template:
+   ```bash
+   cp .env.example .env
+   ```
+6. Start the application:
+   ```bash
+   npm start
+   ```
+
+#### Fedora/CentOS
+1. Open Terminal
+2. Install dependencies:
+   ```bash
+   sudo dnf install git nodejs npm
+   ```
+3. Clone the repository:
+   ```bash
+   git clone https://github.com/oghenetejiriorukpegmail/option-scanner-c35h.git
+   cd option-scanner-c35h
+   ```
+4. Install project dependencies:
+   ```bash
+   npm run install:all
+   ```
+5. Copy environment template:
+   ```bash
+   cp .env.example .env
+   ```
+6. Start the application:
+   ```bash
+   npm start
+   ```
+
+## Troubleshooting
+
+- Ensure Node.js and npm are correctly installed
+- Check that all dependencies are installed correctly
+- Verify your `.env` file is properly configured
+- For any installation issues, check the project's GitHub issues
+
+## Configuration
+
+1. Open `.env` file
+2. Add your API keys and configuration settings
+3. Save the file before starting the application
+
+## Running Tests
+
+```bash
+npm test
+```
+
+## Contributing
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
 
 ## License
 
-MIT License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
