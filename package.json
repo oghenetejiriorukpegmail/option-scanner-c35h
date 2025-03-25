@@ -13,12 +13,13 @@
     "test:server": "cd server && npm test",
     "build": "concurrently \"npm run build:client\" \"npm run build:server\"",
     "build:client": "cd client && npm run build",
-    "build:server": "cd server && npm run build"
+    "build:server": "cd server && npm run build",
+    "audit:fix": "npm audit fix && cd client && npm audit fix && cd ../server && npm audit fix"
   },
   "keywords": ["options", "trading", "analysis", "finance"],
   "author": "Oghenetejiri Orukpe",
   "license": "MIT",
   "devDependencies": {
-    "concurrently": "^6.5.1"
+    "concurrently": "^8.2.2"
   }
 }
