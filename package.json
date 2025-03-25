@@ -1,0 +1,24 @@
+{
+  "name": "option-scanner-c35h",
+  "version": "0.1.0",
+  "description": "A streamlined options trading analysis tool for retail traders",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run start:client\" \"npm run start:server\"",
+    "start:client": "cd client && npm start",
+    "start:server": "cd server && npm start",
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install",
+    "test": "concurrently \"npm run test:client\" \"npm run test:server\"",
+    "test:client": "cd client && npm test",
+    "test:server": "cd server && npm test",
+    "build": "concurrently \"npm run build:client\" \"npm run build:server\"",
+    "build:client": "cd client && npm run build",
+    "build:server": "cd server && npm run build"
+  },
+  "keywords": ["options", "trading", "analysis", "finance"],
+  "author": "Oghenetejiri Orukpe",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^6.5.1"
+  }
+}
