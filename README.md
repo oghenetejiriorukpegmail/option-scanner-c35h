@@ -86,29 +86,30 @@ Before installation, ensure you have the following:
    npm start
    ```
 
-#### Fedora/CentOS
-1. Open Terminal
-2. Install dependencies:
+## Dependency Management and Security
+
+### Addressing Vulnerabilities
+1. Regularly update dependencies:
    ```bash
-   sudo dnf install git nodejs npm
+   npm run audit:fix
    ```
-3. Clone the repository:
+
+2. Check for known vulnerabilities:
    ```bash
-   git clone https://github.com/oghenetejiriorukpegmail/option-scanner-c35h.git
-   cd option-scanner-c35h
+   npm audit
    ```
-4. Install project dependencies:
-   ```bash
-   npm run install:all
-   ```
-5. Copy environment template:
-   ```bash
-   cp .env.example .env
-   ```
-6. Start the application:
-   ```bash
-   npm start
-   ```
+
+3. If vulnerabilities are detected:
+   - Review the vulnerability details
+   - Update specific packages
+   - Consider manual updates for critical security issues
+
+### Recommended Security Practices
+- Keep Node.js and npm updated to the latest LTS versions
+- Regularly run `npm audit`
+- Use `npm audit fix` to automatically resolve minor vulnerabilities
+- For critical vulnerabilities, manually update or replace packages
+- Consider using tools like Snyk or npm audit for comprehensive security scanning
 
 ## Troubleshooting
 
